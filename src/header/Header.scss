@@ -1,0 +1,106 @@
+$charcoal: #bbb;
+
+
+body{
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1544026229-fb4fe534d2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+   background-image: url('help1.png');
+  // background-image: url(https://images.unsplash.com/photo-1455636820250-908db9925403?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  padding-top: 390px;
+
+}
+.main-header {
+  align-items: center;
+  text-decoration: none;
+  height: 200px;
+
+
+  // border-bottom: 1px solid $charcoal;
+  // display: flex;
+  height: 370px;
+  padding: 0 20px;
+  // background-image: url(https://www.104china.com/assets/images/beagiver.png);
+
+
+  a,
+  span {
+    font-size: 1.2em;
+    margin: 0 1px;
+    padding: 10px;
+    text-decoration: none;
+    // color: rgb(56, 55, 55);
+    color: rgb(8, 8, 8);
+  }
+
+}
+nav a:hover{
+  color: rgb(143, 140, 140);
+}
+
+.main-header > nav {
+margin-top: 250px; 
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  background-color: rgb(73, 68, 63);
+  margin-right: -20px; 
+  margin-left: -20px; 
+  font-family: 'Marck Script', cursive;
+  font-family: 'Overlock', cursive;
+}
+
+
+.title{
+  font-size: 100px;
+  text-align: center;
+  // font-family: 'Marck Script', cursive;
+  font-family: 'Marck Script', cursive;
+  font-family: 'Overlock', cursive;
+  
+
+
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    font-size: 0.7em;
+    height: auto;
+    padding: 10px;
+
+    h1 {
+      font-size: 2.5em;
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .main-header > nav {
+    flex-direction: column;
+    width: 100%;
+
+    a,
+    span {
+      border: 1px solid $charcoal;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 80%;
+    }
+  }
+}
+
+body {
+  background-color: #FCF3CF;
+}
