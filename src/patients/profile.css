@@ -1,0 +1,81 @@
+  /* profil */
+  .contact22{
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Overlock', cursive;
+}
+.photo{
+    margin-left:100px; 
+    padding-bottom: 15px;
+    width: 50%;
+
+}
+
+
+.butnin{
+    border-radius: 4px;
+    /* background-color: #4b4242; */
+    background-color: #b3aca5;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+   
+    
+}
+
+.butnin span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color:rgb(54, 46, 37);
+}
+
+.butnin:hover {
+    background-color: #b3aca5;
+    
+  }
+
+  .butnin span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .butnin:hover span {
+    padding-right: 25px;
+  }
+  
+  .butnin:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  .showcontainer{
+      margin-bottom: 20px; 
+      display: justify;
+    text-justify: auto; 
+  }
+  .showcontainer p{
+    
+    color: rgb(77, 68, 61);
+    margin-top: 100px;
+  }
+  .showcontainer label{
+        color: rgb(42, 37, 31);
+  }
+
+  .det p{
+
+    color :rgb(49, 38, 28);
+      
+  }

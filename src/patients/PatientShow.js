@@ -23,14 +23,16 @@ class PatientShow extends Component{
 
     render(){
         return(
-            <div>
-                <h1>{this.state.patient.patientName}</h1>
-                <h1>{this.state.patient.age}</h1>
-                <h1>{this.state.patient.city}</h1>
-                <img src={this.state.patient.image}/>
-                <h1>{this.state.patient.hospital}</h1>
-                <h1>{this.state.patient.fileNumber}</h1>
-                <img src={this.state.patient.medicalReport}/>
+            <div className="showcontainer">
+                
+                <p ><label>Name : </label>{this.state.patient.patientName} |&nbsp;&nbsp;&nbsp;
+                <label>Age : </label>{this.state.patient.age} |&nbsp;&nbsp;&nbsp;
+                <label>City : </label>{this.state.patient.city} |&nbsp;&nbsp;&nbsp;
+                <label>Hospital : </label>{this.state.patient.hospital} |&nbsp;&nbsp;&nbsp;
+                <label>File Number : </label>{this.state.patient.fileNumber}</p>
+
+                <img className="photo"src={this.state.patient.image}/><br/>
+                <img className="photo" src={this.state.patient.medicalReport}/>
                 
             </div>
         )

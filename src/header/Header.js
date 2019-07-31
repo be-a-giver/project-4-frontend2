@@ -18,7 +18,7 @@ const authenticatedOptions = (user) =>(
   </React.Fragment>
     }
    
-
+   
     <Link to="/sign-out">Sign Out</Link>
   </React.Fragment>
 )

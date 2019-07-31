@@ -3,7 +3,7 @@ class About extends Component {
     render(){
         return(
             <div>
-                <h2>About us </h2>
+                <h2 className="quistion">About us </h2>
                 <p>We are a group created this website for Medical Situations <br/>
                 Our goal is help people and draw the smile at thier faces and make a change on their life with live  in peace.
                 <br/>We as a developers know that technology will help a solution to many humanitarian situations problems, 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {index,destroy} from './api'
 import {Link} from 'react-router-dom'
+import './profile.css'
 
 
 class PatientIndex extends Component {
@@ -40,11 +41,24 @@ class PatientIndex extends Component {
             <div>
                 {this.state.patients.map((patient,index) => (
                    <div key={index}>
-                        <Link to={`/patients/${patient._id}`}><h1>{patient.patientName} {patient.age} {patient.city} {patient.city} {patient.hospital} {patient.fileNumber} </h1></Link><br/>
-                        <img src={patient.image}/> 
-                        <img src={patient.medicalReport}/>
-                        <button onClick={() => this.destroy(patient._id)} className='btnn'><span>Delete</span></button>
-                        <Link to={`/patients/${patient._id}/edit`}><button className='btnn'><span>Edit</span></button></Link>
+                       <div className="contact22">
+                           
+                        <Link to={`/patients/${patient._id}`}>
+                            <div className="det">
+                            <p>{patient.patientName}&nbsp;&nbsp;
+                            {patient.age}  &nbsp;&nbsp;
+                            {patient.city} &nbsp;&nbsp;
+                            {patient.city} &nbsp;&nbsp;
+                            {patient.hospital} &nbsp;&nbsp;
+                            {patient.fileNumber}</p>
+                            </div>
+                         </Link><br/>
+                         
+                        <img className="photo" src={patient.image}/> <br/>
+                        <img className="photo" src={patient.medicalReport}/><br/>
+                        <button onClick={() => this.destroy(patient._id)} className='butnin'><span>Delete</span></button><br/>
+                        <Link to={`/patients/${patient._id}/edit`}><button className='butnin'><span>Edit</span></button></Link>
+                        </div>
                     </div>
                 ))}
             </div>
