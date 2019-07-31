@@ -37,11 +37,14 @@ class Dontate extends Component {
     render(){
         return(
             <div>
-                <form onSubmit={this.handleSubmit}>
-                <label>Dontate</label>
-                <input type="number" onChange={this.handelChange}/>
-                <input type="submit" />
+                <div className="contact">
+                <form className="feedback" onSubmit={this.handleSubmit}>
+                <label>Donate</label>
+                <input className="form" type="number" onChange={this.handelChange}/>
+                {/* <input type="submit" /> */}
+                <button type="submit"  className='btnn'><Link to="/situations"><span>Submit</span></Link></button>
                 </form>
+                </div>
                 
             </div>
         )
