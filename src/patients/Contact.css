@@ -38,7 +38,7 @@
    
  }
 
-/* ex */
+/* button  style */
 
 
 .btnn{
@@ -87,6 +87,9 @@
     right: 0;
   }
 
+
+
+  
 
   /* button for sign up as user and helper */
 
@@ -139,7 +142,7 @@
   height: auto;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -149,7 +152,7 @@
   width: 100%;
   height: 0;
   transition: .5s ease;
-}
+} */
 
 .container2:hover .overlay {
   height: 100%;
@@ -233,7 +236,7 @@
     transition: all 0.5s;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: 450px;
+    margin-left: 40px;
     margin-right: 450px;
     
 }
@@ -267,6 +270,88 @@
     opacity: 1;
     right: 0;
   }
+
+  .pics{
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 316px;
+    margin-left: 400px;
+    margin-top: 10px;
+    /* float: left;  */
+    /* margin: 0px 0px 15px 15px; */
+    
+  }
+
+.all-sit {
+  height: 20vh;
+}
+  /* summbutt style  */
+
+ 
+
+  .summbutt{
+    border-radius: 4px;
+    /* background-color: #4b4242; */
+    background-color: #b3aca5;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 40px;
+    
+}
+
+.summbutt span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color:rgb(54, 46, 37);
+}
+
+.summbutt:hover {
+    background-color: #b3aca5;
+    
+  }
+
+  .summbutt span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .summbutt:hover span {
+    padding-right: 25px;
+  }
+  
+  .summbutt:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* names in sitiuations  */
+  .namesit{
+    font-size: 25px;
+
+  }
+  /* .names{
+    
+    display: inline-block;
+    margin-left: 400px;
+    float: left; 
+    margin-left:10px;
+  } */
+
+
+ 
  
 
 

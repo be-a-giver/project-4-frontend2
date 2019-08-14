@@ -45,17 +45,16 @@ class PatientIndex extends Component {
                            
                         <Link to={`/patients/${patient._id}`}>
                             <div className="det">
-                            <p>{patient.patientName}&nbsp;&nbsp;
-                            {patient.age}  &nbsp;&nbsp;
-                            {patient.city} &nbsp;&nbsp;
-                            {patient.city} &nbsp;&nbsp;
-                            {patient.hospital} &nbsp;&nbsp;
-                            {patient.fileNumber}</p>
+                            <p><label>Name : </label>{patient.patientName}&nbsp;&nbsp;
+                            <label>Age : </label>{patient.age}  &nbsp;&nbsp;
+                            <label>City : </label>{patient.city} &nbsp;&nbsp;
+                            <label>Hospital : </label>{patient.hospital} &nbsp;&nbsp;
+                            <label>File Number : </label>{patient.fileNumber}</p>
                             </div>
                          </Link><br/>
                          
-                        <img className="photo" src={patient.image}/> <br/>
-                        <img className="photo" src={patient.medicalReport}/><br/>
+                        <img className="photo" src={patient.image }/> <br/>
+                        <img className="photo" src={patient.medicalReport} width = "300" hight = "300"/><br/>
                         <button onClick={() => this.destroy(patient._id)} className='butnin'><span>Delete</span></button><br/>
                         <Link to={`/patients/${patient._id}/edit`}><button className='butnin'><span>Edit</span></button></Link>
                         </div>
