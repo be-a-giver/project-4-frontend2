@@ -25,7 +25,7 @@ class PatientShow extends Component{
         return(
             <div className="showcontainer">
                 
-                <p ><label>Name : </label>{this.state.patient.patientName} |&nbsp;&nbsp;&nbsp;
+                <p><label>Name : </label>{this.state.patient.patientName} |&nbsp;&nbsp;&nbsp;
                 <label>Age : </label>{this.state.patient.age} |&nbsp;&nbsp;&nbsp;
                 <label>City : </label>{this.state.patient.city} |&nbsp;&nbsp;&nbsp;
                 <label>Hospital : </label>{this.state.patient.hospital} |&nbsp;&nbsp;&nbsp;

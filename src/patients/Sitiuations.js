@@ -25,31 +25,43 @@ class Situations extends Component {
        
         
         return(
-            <div> 
+            <div width = "900" hight = "500"> 
                 <h1 className="medecal-sit">Medical Situations </h1>
                
                 {this.state.patients.map((patient,index) => (
                     <div key={index}>
-                    
-                    <p>{patient.patientName}</p>
-                        <div className="container2">
+                    <div className="names">
+                   
+                    </div>
+                        <div className="pics">
+                             <h3 className="names">{patient.patientName}</h3>
+                       <img src = {patient.image} width = "300" hight = "300"/>
                         
-                        <img src = {patient.image} className="sitimge" width = "300" hight = "300"/>
-                        </div>
                         {this.props.user ? 
-                        <div className= "overlay">
-                        <details className="details">
-                            <summary className='btnn3' > <span> Show more </span></summary>
-                            <p>{patient.age}</p>
-                            <p>{patient.fileNumber}</p>
-                            <p>{patient.city}</p>
-                            <img  src={patient.medicalReport} />
+                        
+                        <details>
+                            <summary className='summbutt' ><span> Show more </span></summary>
+                            <p><label>Age : </label>{patient.age} |&nbsp;&nbsp;&nbsp; 
+                            <label>File Number : </label>{patient.fileNumber} | &nbsp;&nbsp;&nbsp;
+                            <label>City : </label>{patient.city} |&nbsp;&nbsp;&nbsp;
+                            <label>Hospital : </label>{patient.hospital}</p>
+                            <a href= {patient.medicalReport}>
+                            <img  className ="photoo2"src={patient.medicalReport} width = "300" hight = "300"/></a>
 
+
+                            {this.props.user.helper ? 
                             <button className='btnn4'><Link to={`/situations/${patient._id}`}><span>Donate</span></Link></button>
+                            
+                            :
+                            
+                            
+                            ''}
+                            
                         </details>
-                        </div>
+                       
                         : ""
                         }
+                        </div>
                         </div>
                      
 

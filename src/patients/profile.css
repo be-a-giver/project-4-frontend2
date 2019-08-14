@@ -1,9 +1,14 @@
   /* profil */
   .contact22{
-    text-align: center;
+    
     margin-top: 100px;
+    margin-right: 100px;
     font-family: 'Marck Script', cursive;
     font-family: 'Overlock', cursive;
+}
+.contact22 p{
+  
+  margin-left: 100px;
 }
 .photo{
     margin-left:100px; 
@@ -67,7 +72,7 @@
   }
   .showcontainer p{
     
-    color: rgb(77, 68, 61);
+    color: rgb(101, 85, 47);
     margin-top: 100px;
   }
   .showcontainer label{
@@ -76,6 +81,11 @@
 
   .det p{
 
-    color :rgb(49, 38, 28);
+    color: rgb(101, 85, 47);
       
+  }
+
+  .det label {
+   
+    color:  rgb(42, 37, 31);
   }

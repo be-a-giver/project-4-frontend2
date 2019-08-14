@@ -78,7 +78,7 @@ class PatientEdit extends Component{
         <input  className="form"  onChange={this.handleChange} type="number" name="fileNumber" value={this.state.dataForm.fileNumber}/>
         <br/>
         <label>MedicalReport</label>
-        <input  className="form"  onChange={this.handleChange} type="text" name="medicalReport" value={this.state.dataForm.medicalReport}/>
+        <input  className="form"  onChange={this.handleChange} type="text" name="medicalReport" value={this.state.dataForm.medicalReport} />
         <br/>
         <button type='submit' className='btnn'><span>Update</span></button>
         
